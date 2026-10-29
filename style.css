@@ -40,9 +40,9 @@ header nav ul li:hover{
 /* #endregion header */
 
 
-/* #region section1 */
+/* #region main */
 
-.section1 {
+main {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -51,7 +51,7 @@ header nav ul li:hover{
     gap: 30px;
 }
 
-.section1 .signIn{
+main .signIn{
     grid-column: span 1;
     background-color: #FFFFFF;
     border-radius: 12px;
@@ -63,7 +63,7 @@ header nav ul li:hover{
     padding: 16px;
 }
 
-.section1 .signIn .title{
+main .signIn .title{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -72,52 +72,52 @@ header nav ul li:hover{
     gap: 6px;
 }
 
-.section1 .signIn .title h2{
+main .signIn .title h2{
     color: #141414;
     font-size: 32px;
 }
 
-.section1 .signIn .title p{
+main .signIn .title p{
     color: #666666;
     font-size: 14px;
 }
 
-.section1 .signIn form{
+main .signIn form{
     display: flex;
     flex-direction: column;
     width: 100%;
     gap: 30px;
 }
 
-.section1 .signIn form .email, .password{
+main .signIn form .email, .password{
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.section1 .signIn form input{
+main .signIn form input{
     padding: 12px 15px 12px 13px;
     border: 1.5px solid #D1D1D1;
     border-radius: 8px;
     transition: 0.2s ease;
 }
 
-.section1 .signIn form input:focus{
+main .signIn form input:focus{
     border: 1.5px solid #bf1790;
     outline: none;
 }
 
-.section1 .signIn form input::placeholder{
+main .signIn form input::placeholder{
     font-style: italic;
     color: #878686c6;
 }
 
-.section1 .signIn form label{
+main .signIn form label{
     color: #3D3D3D;
     font-size: 14px;
 }
 
-.section1 .signIn form button{
+main .signIn form button{
     background-color: #C8177D;
     padding: 10px;
     border-radius: 8px;
@@ -128,23 +128,23 @@ header nav ul li:hover{
     transition: 0.3s ease;
 }
 
-.section1 .signIn form button:hover{
+main .signIn form button:hover{
     background-color: #a90d68;
     color: #e4dede;
 }
 
-.section1 img{
+main img{
     width: 100%;
     grid-column: span 2;
     border-radius: 30px;
     height: 416px;
 }
 
-/* #endregion section1 */
+/* #endregion main */
 
-/* #region section2 */
+/* #region section */
 
-.section2{
+section{
     width: 100%;
     padding: 70px 177px;
     background-color: #F5F5F5;
@@ -154,29 +154,29 @@ header nav ul li:hover{
     gap: 30px;
 }
 
-.section2 .up{
+section .title{
     display: flex;
     flex-direction: column;
     gap: 6px;
 }
 
-.section2 .up h1{
+section .title h1{
     color: #C8177D;
     font-size: 40px;
 }
 
-.section2 .up p{
+section .title p{
     color: #3D3D3D;
     font-size: 18px;
 }
 
-.section2 .down{
+section .boxParent{
     display: flex;
     gap: 24px;
     flex-wrap: wrap;
 }
 
-.section2 .down .box{
+section .boxParent .box{
     width: 33%;
     display: flex;
     flex-direction: column;
@@ -190,39 +190,39 @@ header nav ul li:hover{
     transition: 0.2s ease;
 }
 
-.section2 .down .box:hover{
+section .boxParent .box:hover{
     box-shadow: rgba(186, 16, 158, 0.35) 0px 5px 15px;
     transform: translateY(-2px);
 }
 
-.section2 .down .box .first{
+section .boxParent .box .about{
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-.section2 .down .box .first img{
+section .boxParent .box .about img{
     width: 100%;
     border-radius: 10px;
     height: 262px;
 }
 
-.section2 .down .box .first p{
+section .boxParent .box .about p{
     font-size: 14px;
     color: #666666;
 }
 
-.section2 .down .box .first h3{
+section .boxParent .box .about h3{
     color: #141414;
     font-size: 24px;
 }
 
-.section2 .down .box .second{
+section .boxParent .box .price{
     display: flex;
     justify-content: space-between;
 }
 
-.section2 .down .box .second p{
+section .boxParent .box .price p{
     color: #8A8A8A;
     font-size: 12px;
     display: flex;
@@ -230,13 +230,13 @@ header nav ul li:hover{
     gap: 10px;
 }
 
-.section2 .down .box .second p span{
+section .boxParent .box .price p span{
     color: #141414;
     font-size: 32px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.section2 .down .box .second button{
+section .boxParent .box .price button{
     padding: 10px 25px;
     border-radius: 8px;
     background-color: #C8177D;
@@ -247,12 +247,12 @@ header nav ul li:hover{
     transition: 0.3s ease;
 }
 
-.section2 .down .box .second button:hover{
+section .boxParent .box .price button:hover{
     background-color: #ae0f6b;
     color: #e9e4e4;
 }
 
-/* #endregion section2 */
+/* #endregion section */
 
 /* #region footer  */
 
@@ -271,84 +271,85 @@ footer .box{
     padding: 80px 0px 20px 0px;
 }
 
-footer .box .up{
+footer .box .info{
     display: flex;
     justify-content: space-between;
 }
 
-footer .box .up .left{
+footer .box .info .left{
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-footer .box .up .left .courses{
+footer .box .info .left .courses{
     display: flex;
     align-items: center;
     gap: 15px;
 }
 
-footer .box .up .left .courses img{
+footer .box .info .left .courses img{
     width: 40px;
 }
 
-footer .box .up .left .courses h2{
+footer .box .info .left .courses h2{
     color: #C8177D;
     font-size: 24px;
 }
 
-footer .box .up .left p{
+footer .box .info .left p{
     color: #6C6C6C;
     font-size: 14px;
 }
 
-footer .box .up .left .social{
+footer .box .info .left ul{
     display: flex;
     gap: 10px;
+    list-style: none;
 }
 
-footer .box .up .left .social a{
+footer .box .info .left ul a{
     color: #C8177D;
     font-size: 22px;
     transition: 0.3s ease;
 }
 
-footer .box .up .left .social a:hover{
+footer .box .info .left ul a:hover{
     color: #f00a90;
 }
 
-footer .box .up .right{
+footer .box .info .right{
     display: flex;
     gap: 120px;
 }
 
-footer .box .up .right .boxes{
+footer .box .info .right .boxes{
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
 
-footer .box .up .right .boxes h3{
+footer .box .info .right .boxes h3{
     color: #C8177D;
     font-size: 20px;
 }
 
-footer .box .up .right .boxes p{
+footer .box .info .right .boxes p{
     color: #838282;
     font-size: 14px;
 }
 
-footer .box .down{
+footer .box .conditions{
     display: flex;
     justify-content: flex-end;
 }
 
-footer .box .down p{
+footer .box .conditions p{
     color: #838282;
     font-size: 16px;
 }
 
-footer .box .down p span{
+footer .box .conditions p span{
     color: #C8177D;
 }
 
@@ -358,38 +359,38 @@ footer .box .down p span{
 
 
 @media screen and (max-width:1210px){
-    header, .section1, .section2, footer{
+    header, main, section, footer{
         padding: 24px 30px;
     }
 
-    footer .box .up .right{
+    footer .box .info .right{
         gap: 40px;
     }
 }
 
 @media screen and (max-width: 800px) {
-    .section1 {
+    main {
         grid-template-columns: 1fr;
     }
 
-    .section1 .signIn {
+    main .signIn {
         grid-column: span 1;
     }
 
-    .section1 img {
+    main img {
         grid-column: span 1;
         height: auto;
         min-height: 0;
     }
 
 
-    footer .box .up {
+    footer .box .info {
         flex-direction: column;
         gap: 60px;
         align-items: center;
     }
 
-    footer .box .up .left{
+    footer .box .info .left{
         border: 1px solid #bf1790;
         width: 100%;
         padding: 20px;
@@ -398,38 +399,38 @@ footer .box .down p span{
         box-shadow: rgba(181, 23, 139, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
     }
 
-    footer .box .up .left .courses img{
+    footer .box .info .left .courses img{
         width: 60px;
     }
 
-    footer .box .up .left .courses h2{
+    footer .box .info .left .courses h2{
         font-size: 45px;
     }
 
-    footer .box .up .left p{
+    footer .box .info .left p{
         font-size: 18px;
     }
 
-    footer .box .up .right {
+    footer .box .info .right {
         flex-wrap: wrap;
         gap: 30px;
     }
 
-    footer .box .up .right .boxes {
+    footer .box .info .right .boxes {
         min-width: 120px;
     }
 
-    footer .box .down {
+    footer .box .conditions {
         justify-content: flex-start;
     }
 
-    footer .box .down p {
+    footer .box .conditions p {
         font-size: 13px;
     }
 }
 
 @media screen and (max-width: 420px){
-    header, .section1, .section2, footer{
+    header, main, section, footer{
         padding: 24px 15px;
     }
 
@@ -441,54 +442,54 @@ footer .box .down p span{
         font-size: 14px;
     }
 
-    .section2 .down .box{
+    section .boxParent .box{
         min-width: 200px;
     }
 
-    .section2 .down .box .second{
+    section .boxParent .box .price{
         flex-direction: column;
         gap: 10px;
     }
 
-    .section2 .down .box .second p{
+    section .boxParent .box .price p{
         justify-content: space-between;
     }
 
-    footer .box .up{
+    footer .box .info{
         align-items: flex-start;
     }
 
-    footer .box .up .left .courses img{
+    footer .box .info .left .courses img{
         width: 40px;
     }
 
-    footer .box .up .left .courses h2{
+    footer .box .info .left .courses h2{
         font-size: 25px;
     }
 
-    footer .box .up .left p{
+    footer .box .info .left p{
         font-size: 15px;
     }
 
-    footer .box .up .right {
+    footer .box .info .right {
         flex-direction: column;
         gap: 24px;
     }
 
-    footer .box .up .right .boxes {
+    footer .box .info .right .boxes {
         gap: 12px;
     }
 
-    footer .box .up .right .boxes h3 {
+    footer .box .info .right .boxes h3 {
         font-size: 18px;
     }
 
-    footer .box .up .right .boxes p {
+    footer .box .info .right .boxes p {
         font-size: 13px;
         overflow-wrap: anywhere;
     }
 
-    footer .box .down p {
+    footer .box .conditions p {
         font-size: 12px;
         line-height: 1.8;
     }
